@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/angular
-# Edit at https://www.toptal.com/developers/gitignore?templates=angular
+# Created by https://www.toptal.com/developers/gitignore/api/angular,dotnetcore
+# Edit at https://www.toptal.com/developers/gitignore?templates=angular,dotnetcore
 
 ### Angular ###
 ## Angular ##
@@ -33,4 +33,13 @@ e2e/*.map
 # System Files
 .DS_Store/
 
-# End of https://www.toptal.com/developers/gitignore/api/angular
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+# End of https://www.toptal.com/developers/gitignore/api/angular,dotnetcore
