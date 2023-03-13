@@ -1,0 +1,26 @@
+.checkbox {
+    margin-left: 0px;
+    width: 8%;
+    height: 60px;
+}
+
+.input {
+    margin-left: 50px;
+    margin-top: -50px;
+    width: 35%;
+    height: 40px;
+}
+
+.button {
+    margin-left: 220px;
+    margin-top: -40px;
+    width: 25%;
+    height: 40px;
+}
+
+.button2 {
+    margin-left: 340px;
+    margin-top: -40px;
+    width: 25%;
+    height: 40px;
+}

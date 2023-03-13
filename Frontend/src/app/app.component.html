@@ -1,0 +1,32 @@
+<div class=" row">
+    <div class="col-12">
+        <nav class="navbar navbar-expand navbar-dark bg-dark text-white">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link text-white " [routerLink]="['']">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" [routerLink]="['create']">CREATE</a>
+                </li>
+
+                <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
+                <button mat-raised-button *ngIf="loginDisplay" (click)="logout()">Logout</button>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<div *ngIf="!loginDisplay">
+    <p>Please sign-in to see your profile information.</p>
+</div>
+<!-- 
+<div *ngIf="loginDisplay">
+    <div class="container">
+        <router-outlet *ngIf="!isIframe"></router-outlet>
+    </div>
+
+</div> -->
+
+<router-outlet *ngIf="!isIframe"></router-outlet>

@@ -1,0 +1,8 @@
+
+<h2>User : {{email}}</h2>
+
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <app-to-do-preview *ngFor="let toDoList of toDoLists" cdkDrag [cdkDragData]="toDoList" [toDoList]="toDoList"
+    (callDelete)="deleteToDoList($event)">
+  </app-to-do-preview>
+</div>

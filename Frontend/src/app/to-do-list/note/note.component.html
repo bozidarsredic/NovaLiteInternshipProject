@@ -1,0 +1,11 @@
+<form [formGroup]="formGroup" class="mb-4" autocomplete="off">
+    <div class="form-group">
+        <input type="checkbox" class="form-control checkbox" formControlName="isCompleted">
+        <input class="form-control input" formControlName="content">
+        <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body  button"
+            (click)=updateNote()>UPDATE</button>
+        <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body  button2"
+            (click)=deleteNote()>DELETE</button>
+    </div>
+
+</form>
